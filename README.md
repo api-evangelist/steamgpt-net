@@ -64,9 +64,9 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-SteamGPT provides a free, no‑key API that transforms Steam user data into AI‑ready formats. It offers endpoints for SteamID conversion, ban checks, and profile lookups, delivering results as markdown, plain text, JSON, or OpenAPI specifications. Targeted at AI agents, developers, and applications, the service operates without registration, cookies, or tracking, and is independent of Valve Corporation.
+SteamGPT provides a free, no‑auth API that surfaces Steam user profile data for AI agents and bots. It offers endpoints for Steam summary, profile details, public friend graph, FACEIT player information, SteamID conversion, ban checks, and batch lookups. Responses are available in markdown, JSON, or AI‑optimized formats, with a soft rate limit of 120 requests per minute per IP and no API key required. The service is independent of Valve and designed for agent‑friendly consumption.
 
-**Areas:** Company · AI · Gaming · Steam · API
+**Areas:** Company · Steam · Gaming · AI · OpenData · NoAuth · Profiles · Friends · FACEIT
 
 ## steamgpt-net on APIs.io
 
@@ -89,35 +89,6 @@ Everything profiled for steamgpt-net is published on APIs.io rather than in this
 
 Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-#### Agentic access (1)
-
-Which operations an agent can call, which act, and which need a human in the loop.
-
-- [Steamgpt Net Agentic Access](https://apis.io/agentic-access/steamgpt-net/steamgpt-net-agentic-access/)
-
-#### JSON Schema (6)
-
-The data models the API reads and writes.
-
-- [Bans](https://apis.io/schemas/steamgpt-net/steamgpt-net-bans/)
-- [Batch](https://apis.io/schemas/steamgpt-net/steamgpt-net-batch/)
-- [Compare](https://apis.io/schemas/steamgpt-net/steamgpt-net-compare/)
-- [Converter](https://apis.io/schemas/steamgpt-net/steamgpt-net-converter/)
-- [Identity](https://apis.io/schemas/steamgpt-net/steamgpt-net-identity/)
-- [Summary](https://apis.io/schemas/steamgpt-net/steamgpt-net-summary/)
-
-#### JSON-LD (1)
-
-Linked-data contexts for the provider's vocabulary.
-
-- [Steamgpt Net Context](https://apis.io/jsonld/steamgpt-net/steamgpt-net-context/)
-
-#### Governance rules (1)
-
-Spectral rulesets for the provider's contracts.
-
-- [steamgpt-net API Rules](https://apis.io/rules/steamgpt-net/steamgpt-net-rules/)
-
 #### Security (3)
 
 Authentication, trust centre, and vulnerability disclosure.
@@ -132,13 +103,25 @@ The permissions the API asks for.
 
 - [Steamgpt Net Scopes](https://apis.io/scopes/steamgpt-net/steamgpt-net-scopes/)
 
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Steamgpt Net Plans Pricing](https://apis.io/plans/steamgpt-net/steamgpt-net-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Steamgpt Net Rate Limits](https://apis.io/rate-limits/steamgpt-net/steamgpt-net-rate-limits/)
+
 ## Where to find this API
 
 Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://steamgpt.net/)
 - [Documentation](https://steamgpt.net/docs.md)
-- [Getting started](https://steamgpt.net/about)
+- [Getting started](https://steamgpt.net/docs.md)
 - [API reference](https://steamgpt.net/openapi.json)
 - [Support](https://steamgpt.net/support)
 - [Terms of service](https://steamgpt.net/terms)
@@ -147,30 +130,30 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 49.6** — developing · rubric 0.25.0 · scored 2026-10-31
+**Kin Score 39.9** — developing · rubric 0.25.0 · scored 2026-10-31
 
 | Facet | Score |
 |---|---|
 | Discoverability | 65.0 |
-| Contract quality | 54.7 |
-| Contract governance | 79.1 |
-| Operational transparency | 15.8 |
-| Developer ergonomics | 51.7 |
+| Contract quality | 41.1 |
+| Contract governance | 0.0 |
+| Operational transparency | 34.7 |
+| Developer ergonomics | 58.8 |
 | Access clarity | 21.1 |
 
-**Agent readiness 51.3** — agent-ready (gated down from agent-native)
+**Agent readiness 47.4** — agent-ready (gated down from agent-native)
 
 | Agent-readiness dimension | Result |
 |---|---|
 | Spec Presence | yes |
-| Agentic Access | unknown |
+| Agentic Access | — |
 | Reversibility Documented | — |
 | MCP Server | documented (partial credit) |
 | Auth Clarity | served (partial credit) |
 | Idempotency | — |
 | Error Semantics | verified |
 | OpenAPI Examples | — |
-| Rate Limit Signal | — |
+| Rate Limit Signal | documented (partial credit) |
 | Event Surface Described | — |
 | Agent Skills | unknown |
 | Well Known Catalog | yes |
@@ -184,7 +167,7 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Pagination Ratio | na |
 | Operation Distinctiveness | distinct |
 
-**Regulatory alignment 37.3** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 32.7** — Horizontal (data, software, accessibility, platform)
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/steamgpt-net/](https://apis.io/providers/steamgpt-net/).
 
